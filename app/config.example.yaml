@@ -1,0 +1,7 @@
+# пример конфигурации для одного URL
+sites:
+  - url: "https://www.coingecko.com/en/coins/bitcoin"
+    selector: "span.tw-text-gray-900"
+    target_price: 60000
+    chat_id: "123456789"
+    interval_sec: 300         # проверять каждые 5 минут
