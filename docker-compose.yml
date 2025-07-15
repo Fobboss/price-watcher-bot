@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  price-watcher:
+    image: fobboss/price-watcher:latest   # позже заменим на ваш Docker Hub
+    env_file:
+      - .env
+    volumes:
+      - ./config.yaml:/app/app/config.yaml:ro
+    restart: unless-stopped
